@@ -3,7 +3,7 @@ pkgs:
     enable = true;
     aliases = {
         a = "add";
-        c = "commit";
+        ci = "commit";
         ca = "commit --amend";
         can = "commit --amend --no-edit";
         cl = "clone";
