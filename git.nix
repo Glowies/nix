@@ -1,6 +1,8 @@
 pkgs:
 {
     enable = true;
+    userName = "glowies";
+    userEmail = "comuokta@gmail.com";
     aliases = {
         a = "add";
         ci = "commit";
