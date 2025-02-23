@@ -4,6 +4,7 @@ let
     nvimsettings = import ./nvim.nix;
     gitsettings = import ./git.nix;
     zshsettings = import ./zsh.nix;
+    vscodesettings = import ./vscode.nix;
 in
 {
   # Home Manager needs a bit of information about you and the
@@ -34,4 +35,5 @@ in
     programs.neovim = nvimsettings pkgs; 
     programs.git = gitsettings pkgs;
     programs.zsh = zshsettings pkgs;
+    programs.vscode = vscodesettings pkgs;
 }
