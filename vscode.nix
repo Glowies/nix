@@ -13,6 +13,7 @@ pkgs: {
     vscodevim.vim
     ms-python.python
     ms-dotnettools.csharp
+    charliermarsh.ruff
   ];
   keybindings = [
     # See https://code.visualstudio.com/docs/getstarted/keybindings#_advanced-customization
