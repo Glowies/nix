@@ -33,12 +33,12 @@
         {
           # List packages installed in system profile. To search by name, run:
           # $ nix-env -qaP | grep wget
-          environment.systemPackages = [
-            pkgs.wezterm
-            pkgs.obsidian
-            pkgs.git
-            pkgs.neovim
-            pkgs.nixfmt-rfc-style
+          environment.systemPackages = with pkgs; [
+            wezterm
+            obsidian
+            git
+            neovim
+            nixfmt-rfc-style
           ];
 
           # Necessary for using flakes on this system.
