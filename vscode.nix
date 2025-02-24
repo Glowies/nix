@@ -5,6 +5,9 @@ pkgs: {
     # https://code.visualstudio.com/docs/getstarted/settings#_settingsjson
     "editor.formatOnSave" = true;
     "workbench.colorTheme" = "GitHub Dark Default";
+    "vim.leader" = "<space>";
+    "vim.easymotion" = true;
+    "vim.useSystemClipboard" = true;
   };
   extensions = with pkgs.vscode-marketplace; [
     jnoortheen.nix-ide
