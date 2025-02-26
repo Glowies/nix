@@ -80,6 +80,7 @@
             NSGlobalDomain.NSScrollAnimationEnabled = false;
             #NSGlobalDomain."com.apple.mouse.linear" = true;
             #NSGlobalDomain."com.apple.scrollwheel.scaling" = 1;
+            ".GlobalPreferences"."com.apple.mouse.scaling" = -1.0;
             finder.AppleShowAllExtensions = true;
             finder.AppleShowAllFiles = true;
             finder.FXPreferredViewStyle = "clmv";
