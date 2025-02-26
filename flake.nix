@@ -91,6 +91,8 @@
             dock.autohide-time-modifier = 0.1;
             dock.show-recents = false;
             dock.tilesize = 32;
+            dock.wvous-tl-corner = 2;
+            dock.wvous-tr-corner = 2;
           };
 
           # set users to avoid error with home-manager
