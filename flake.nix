@@ -94,7 +94,7 @@
             dock.tilesize = 32;
             dock.wvous-tl-corner = 2;
             dock.wvous-tr-corner = 2;
-            spaces.spans-displays = true;
+            spaces.spans-displays = false;
             WindowManager.EnableStandardClickToShowDesktop = false;
           };
 
