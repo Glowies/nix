@@ -17,6 +17,7 @@ pkgs: {
     ms-python.python
     ms-dotnettools.csharp
     charliermarsh.ruff
+    tamasfe.even-better-toml
   ];
   keybindings = [
     # See https://code.visualstudio.com/docs/getstarted/keybindings#_advanced-customization

@@ -39,6 +39,7 @@
             git
             neovim
             nixfmt-rfc-style
+            autoraise
           ];
 
           # Necessary for using flakes on this system.
@@ -93,6 +94,8 @@
             dock.tilesize = 32;
             dock.wvous-tl-corner = 2;
             dock.wvous-tr-corner = 2;
+            spaces.spans-displays = true;
+            WindowManager.EnableStandardClickToShowDesktop = false;
           };
 
           # set users to avoid error with home-manager
@@ -102,6 +105,10 @@
               name = "${username}";
             };
           };
+
+          # import aerospace settings
+          services.aerospace.enable = true;
+          services.aerospace.settings = import ./aerospace.nix pkgs;
         };
     in
     {
