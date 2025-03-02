@@ -6,7 +6,7 @@ pkgs: {
   };
   oh-my-zsh = {
     enable = true;
-    theme = "Soliah";
+    theme = "juanghurtado";
   };
   shellAliases = {
     switch = "darwin-rebuild switch --flake ~/.config/nix";
