@@ -133,14 +133,6 @@
               ProcessType = "Interactive";
             };
           };
-
-          # set up tmux
-          programs.tmux = {
-            enable = true;
-            enableMouse = true;
-            enableFzf = true;
-            enableVim = true;
-          };
         };
     in
     {

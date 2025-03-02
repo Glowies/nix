@@ -1,5 +1,6 @@
 pkgs: {
   enable = true;
+  package = pkgs.zsh;
   enableCompletion = true;
   autosuggestion = {
     enable = true;

@@ -3,6 +3,7 @@
 let
   nvimsettings = import ./nvim.nix;
   gitsettings = import ./git.nix;
+  tmuxsettings = import ./tmux.nix;
   zshsettings = import ./zsh.nix;
   vscodesettings = import ./vscode.nix;
   weztermsettings = import ./wezterm.nix;
@@ -35,6 +36,7 @@ in
   # Program Configs
   programs.neovim = nvimsettings pkgs;
   programs.git = gitsettings pkgs;
+  programs.tmux = tmuxsettings pkgs;
   programs.zsh = zshsettings pkgs;
   programs.vscode = vscodesettings pkgs;
   programs.wezterm = weztermsettings pkgs;
