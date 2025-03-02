@@ -8,6 +8,8 @@ pkgs: {
     "vim.leader" = "<space>";
     "vim.easymotion" = true;
     "vim.useSystemClipboard" = true;
+    "editor.lineNumbers" = "relative";
+    "editor.minimap.enabled" = false;
   };
   extensions = with pkgs.vscode-marketplace; [
     jnoortheen.nix-ide
