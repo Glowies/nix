@@ -1,9 +1,4 @@
 pkgs: {
-  # You can use it to add commands that run after login to macOS user session.
-  # 'start-at-login' needs to be 'true' for 'after-login-command' to work
-  # Available commands: https://nikitabobko.github.io/AeroSpace/commands
-  after-login-command = [ ];
-
   # You can use it to add commands that run after AeroSpace startup.
   # 'after-startup-command' is run after 'after-login-command'
   # Available commands : https://nikitabobko.github.io/AeroSpace/commands
@@ -53,12 +48,12 @@ pkgs: {
   #                 Monitor pattern is the same as for 'workspace-to-monitor-force-assignment'.
   #                 See: https://nikitabobko.github.io/AeroSpace/guide#assign-workspaces-to-monitors
   gaps = {
-    inner.horizontal = 10;
-    inner.vertical = 10;
-    outer.left = 10;
-    outer.bottom = 10;
-    outer.top = 10;
-    outer.right = 10;
+    inner.horizontal = 16;
+    inner.vertical = 16;
+    outer.left = 16;
+    outer.bottom = 16;
+    outer.top = 16;
+    outer.right = 16;
   };
 
   on-window-detected = [

@@ -40,6 +40,7 @@
             neovim
             nixfmt-rfc-style
             fzf
+            jankyborders
           ];
 
           # Necessary for using flakes on this system.
@@ -110,6 +111,22 @@
           # import aerospace settings
           services.aerospace.enable = true;
           services.aerospace.settings = import ./aerospace.nix pkgs;
+
+          # set up jankyborders
+          launchd.user.agents.jankyborders = {
+            serviceConfig = {
+              ProgramArguments = [
+                "${pkgs.jankyborders}/bin/borders"
+                "style=round"
+                "active_color=0xffe1e3e4"
+                "inactive_color=0xff494d64"
+                "width=8.0"
+              ];
+              KeepAlive = true;
+              RunAtLoad = true;
+              ProcessType = "Interactive";
+            };
+          };
         };
     in
     {
