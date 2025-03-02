@@ -1,10 +1,11 @@
 { config, pkgs, ... }:
 
 let
-    nvimsettings = import ./nvim.nix;
-    gitsettings = import ./git.nix;
-    zshsettings = import ./zsh.nix;
-    vscodesettings = import ./vscode.nix;
+  nvimsettings = import ./nvim.nix;
+  gitsettings = import ./git.nix;
+  zshsettings = import ./zsh.nix;
+  vscodesettings = import ./vscode.nix;
+  weztermsettings = import ./wezterm.nix;
 in
 {
   # Home Manager needs a bit of information about you and the
@@ -25,15 +26,16 @@ in
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 
-  home.packages = with pkgs; [];
+  home.packages = with pkgs; [ ];
 
-    home.sessionVariables = {
-        EDITOR = "nvim";
-    };
+  home.sessionVariables = {
+    EDITOR = "nvim";
+  };
 
-    # Program Configs
-    programs.neovim = nvimsettings pkgs; 
-    programs.git = gitsettings pkgs;
-    programs.zsh = zshsettings pkgs;
-    programs.vscode = vscodesettings pkgs;
+  # Program Configs
+  programs.neovim = nvimsettings pkgs;
+  programs.git = gitsettings pkgs;
+  programs.zsh = zshsettings pkgs;
+  programs.vscode = vscodesettings pkgs;
+  programs.wezterm = weztermsettings pkgs;
 }
