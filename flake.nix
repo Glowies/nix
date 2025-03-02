@@ -75,6 +75,15 @@
             extra-platforms = x86_64-darwin aarch64-darwin
           '';
 
+          # Enable Touch ID for sudo
+          security.pam.enableSudoTouchIdAuth = true;
+          # security.pam.services.sudo_local = {
+          #   enable = true;
+          #   reattach = true;
+          #   touchIdAuth = true;
+          #   watchIdAuth = true;
+          # };
+
           # Set System Defaults
           system.defaults = {
             controlcenter.Bluetooth = true;
