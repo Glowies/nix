@@ -39,7 +39,7 @@
             git
             neovim
             nixfmt-rfc-style
-            autoraise
+            fzf
           ];
 
           # Necessary for using flakes on this system.
@@ -76,6 +76,7 @@
 
           # Set System Defaults
           system.defaults = {
+            controlcenter.Bluetooth = true;
             NSGlobalDomain."com.apple.swipescrolldirection" = false;
             NSGlobalDomain.ApplePressAndHoldEnabled = false;
             NSGlobalDomain.NSScrollAnimationEnabled = false;
