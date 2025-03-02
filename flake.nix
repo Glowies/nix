@@ -95,7 +95,7 @@
             finder.FXPreferredViewStyle = "clmv";
             finder.NewWindowTarget = "Computer";
             finder.ShowPathbar = true;
-            dock.orientation = "left";
+            dock.orientation = "bottom";
             dock.autohide = true;
             dock.autohide-time-modifier = 0.1;
             dock.show-recents = false;
@@ -125,7 +125,7 @@
                 "${pkgs.jankyborders}/bin/borders"
                 "style=round"
                 "active_color=0xffe1e3e4"
-                "inactive_color=0xff494d64"
+                "inactive_color=0x00494d64"
                 "width=8.0"
               ];
               KeepAlive = true;
