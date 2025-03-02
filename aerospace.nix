@@ -50,10 +50,10 @@ pkgs: {
   gaps = {
     inner.horizontal = 16;
     inner.vertical = 16;
-    outer.left = 16;
-    outer.bottom = 16;
-    outer.top = 16;
-    outer.right = 16;
+    outer.left = 8;
+    outer.bottom = 8;
+    outer.top = 8;
+    outer.right = 8;
   };
 
   on-window-detected = [
@@ -75,7 +75,7 @@ pkgs: {
     }
     {
       "if" = {
-        app-name-regex-substring = "blender";
+        app-id = "org.blenderfoundation.blender";
       };
       "run" = [
         "move-node-to-workspace B"
@@ -87,6 +87,22 @@ pkgs: {
       };
       "run" = [
         "move-node-to-workspace V"
+      ];
+    }
+    {
+      "if" = {
+        app-id = "com.cisco.secureclient.gui";
+      };
+      "run" = [
+        "layout floating"
+      ];
+    }
+    {
+      "if" = {
+        window-title-regex-substring = "TOR-WKS";
+      };
+      "run" = [
+        "move-node-to-workspace R"
       ];
     }
     {
