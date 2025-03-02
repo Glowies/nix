@@ -9,6 +9,8 @@ pkgs: {
     config.window_decorations = "RESIZE"
     config.color_scheme = "Catppuccin Mocha"
 
+    config.font_size = 14
+
     config.use_fancy_tab_bar = false
     config.show_new_tab_button_in_tab_bar = false
     config.tab_max_width = tab_max_width
