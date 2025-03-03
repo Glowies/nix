@@ -43,7 +43,7 @@
           ];
 
           fonts.packages = [
-            pkgs.fira-code-nerdfont
+            pkgs.nerd-fonts.fira-code
           ];
 
           # Necessary for using flakes on this system.
