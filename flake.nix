@@ -40,7 +40,10 @@
             nixfmt-rfc-style
             fzf
             jankyborders
-            tmuxPlugins.catppuccin
+          ];
+
+          fonts.packages = [
+            pkgs.fira-code-nerdfont
           ];
 
           # Necessary for using flakes on this system.
