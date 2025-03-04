@@ -10,6 +10,13 @@ pkgs: {
     "vim.useSystemClipboard" = true;
     "editor.lineNumbers" = "relative";
     "editor.minimap.enabled" = false;
+    "zenMode.fullScreen" = false;
+    "zenMode.hideLineNumbers" = false;
+    "zenMode.showTabs" = "none";
+    "zenMode.restore" = true;
+    "zenMode.hideStatusBar" = false;
+    "zenMode.centerLayout" = false;
+    "editor.fontSize" = 14;
   };
   extensions = with pkgs.vscode-marketplace; [
     jnoortheen.nix-ide
