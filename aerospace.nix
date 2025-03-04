@@ -70,6 +70,7 @@ pkgs: {
         app-id = "com.brave.Browser";
       };
       "run" = [
+        "layout tiling"
         "move-node-to-workspace W"
       ];
     }
