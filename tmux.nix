@@ -19,6 +19,11 @@ pkgs: {
     set -g mouse on
     set -g default-terminal "tmux-256color"
 
+    # to allow image previews in tmux
+    set -g allow-passthrough on
+    set -ga update-environment TERM
+    set -ga update-environment TERM_PROGRAM
+
     # vim-like bindings
     bind s split-window -v -c "#{pane_current_path}"
     bind v split-window -h -c "#{pane_current_path}"

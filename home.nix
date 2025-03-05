@@ -40,6 +40,10 @@ in
       source = ./dotfiles/nvim;
       recursive = true;
     };
+    ".config/yazi/" = {
+      source = ./dotfiles/yazi;
+      recursive = true;
+    };
   };
 
   # Program Configs
