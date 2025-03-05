@@ -42,6 +42,7 @@
             jankyborders
             yazi
             ripgrep
+            lazygit
           ];
 
           fonts.packages = [
