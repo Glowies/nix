@@ -17,12 +17,16 @@ pkgs: {
     "zenMode.hideStatusBar" = false;
     "zenMode.centerLayout" = false;
     "editor.fontSize" = 14;
+    "extensions.autoCheckUpdates" = false;
+    "extensions.autoUpdate" = false;
+    "extensions.experimental.affinity" = {
+      "asvetliakov.vscode-neovim" = 1;
+    };
   };
   extensions = with pkgs.vscode-marketplace; [
     jnoortheen.nix-ide
     jacqueslucke.blender-development
     github.github-vscode-theme
-    vscodevim.vim
     ms-python.python
     ms-dotnettools.csharp
     charliermarsh.ruff
