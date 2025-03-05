@@ -41,6 +41,7 @@
             fzf
             jankyborders
             yazi
+            ripgrep
           ];
 
           fonts.packages = [

@@ -37,7 +37,7 @@ in
   home.file = {
     ".vimrc".source = ./dotfiles/.vimrc;
     ".config/nvim/" = {
-      source = config.lib.file.mkOutOfStoreSymlink ./dotfiles/nvim;
+      source = ./dotfiles/nvim;
       recursive = true;
     };
   };
