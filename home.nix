@@ -33,8 +33,16 @@ in
     EDITOR = "nvim";
   };
 
+  # dotfile symlinks
+  home.file = {
+    ".vimrc".source = ./dotfiles/.vimrc;
+    ".config/nvim/" = {
+      source = config.lib.file.mkOutOfStoreSymlink ./dotfiles/nvim;
+      recursive = true;
+    };
+  };
+
   # Program Configs
-  programs.neovim = nvimsettings pkgs;
   programs.git = gitsettings pkgs;
   programs.tmux = tmuxsettings pkgs;
   programs.zsh = zshsettings pkgs;
