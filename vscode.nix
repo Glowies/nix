@@ -24,6 +24,7 @@ pkgs: {
     };
   };
   extensions = with pkgs.vscode-marketplace; [
+    asvetliakov.vscode-neovim
     jnoortheen.nix-ide
     jacqueslucke.blender-development
     github.github-vscode-theme
