@@ -18,6 +18,7 @@ pkgs: {
     set -g default-command ${pkgs.zsh}/bin/zsh
     set -g mouse on
     set -g default-terminal "tmux-256color"
+    set -g status-position top
 
     # to allow image previews in tmux
     set -g allow-passthrough on
