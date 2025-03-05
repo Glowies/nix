@@ -22,6 +22,8 @@ pkgs: {
     "extensions.experimental.affinity" = {
       "asvetliakov.vscode-neovim" = 1;
     };
+    # clean neovim install to avoid loading nvim plugins
+    "vscode-neovim.neovimClean" = true;
   };
   extensions = with pkgs.vscode-marketplace; [
     asvetliakov.vscode-neovim
