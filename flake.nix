@@ -40,6 +40,7 @@
             nixfmt-rfc-style
             fzf
             jankyborders
+            yazi
           ];
 
           fonts.packages = [
