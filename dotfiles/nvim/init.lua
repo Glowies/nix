@@ -1,10 +1,2 @@
-vim.cmd([[
-source ~/.vimrc
-]])
-
-vim.g.mapleader = " "
-vim.g.maplocalleader = " "
-
+-- bootstrap lazy.nvim, LazyVim and your plugins
 require("config.lazy")
-
-vim.cmd.colorscheme "catppuccin"
