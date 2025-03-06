@@ -12,6 +12,7 @@ pkgs: {
   shellAliases = {
     switch = "darwin-rebuild switch --flake ~/.config/nix";
     vi = "nvim";
+    lg = "lazygit";
   };
   initExtra = ''
     function y() {
