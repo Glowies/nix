@@ -43,6 +43,7 @@
             yazi
             ripgrep
             lazygit
+            pngpaste
           ];
 
           fonts.packages = [
