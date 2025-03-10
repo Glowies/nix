@@ -10,13 +10,16 @@ if true then return {} end
 -- * override the configuration of LazyVim plugins
 return {
   -- add gruvbox
-  { "ellisonleao/gruvbox.nvim" },
+  {
+    "catppuccin/nvim",
+    name = "catppuccin",
+  },
 
   -- Configure LazyVim to load gruvbox
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "gruvbox",
+      colorscheme = "catppuccin",
     },
   },
 
@@ -72,6 +75,7 @@ return {
       servers = {
         -- pyright will be automatically installed with mason and loaded with lspconfig
         pyright = {},
+        nil_ls = {},
       },
     },
   },
@@ -134,6 +138,7 @@ return {
         "typescript",
         "vim",
         "yaml",
+        "nix",
       },
     },
   },
