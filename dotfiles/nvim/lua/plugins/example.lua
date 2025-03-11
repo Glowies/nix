@@ -15,30 +15,28 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "catppuccin",
+      colorscheme = "catppuccin-mocha",
     },
   },
 
   -- override the default options for snacks.nvim
   {
-    {
-      "folke/snacks.nvim",
-      opts = {
-        notifier = {
-          timeout = 3000,
-          style = "fancy",
+    "folke/snacks.nvim",
+    opts = {
+      notifier = {
+        timeout = 3000,
+        style = "fancy",
+      },
+      styles = {
+        notification = {
+          wo = {
+            wrap = true,
+          },
         },
-        styles = {
-          notification = {
-            wo = {
-              wrap = true,
-            },
-          },
-          notification_history = {
-            width = 0.99,
-            height = 0.8,
-            minimal = false,
-          },
+        notification_history = {
+          width = 0.99,
+          height = 0.8,
+          minimal = false,
         },
       },
     },
