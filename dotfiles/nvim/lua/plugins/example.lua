@@ -33,6 +33,14 @@ return {
   {
     "folke/snacks.nvim",
     opts = {
+      picker = {
+        explorer = {
+          auto_close = false,
+        },
+        files = {
+          hidden = true,
+        },
+      },
       notifier = {
         timeout = 3000,
         style = "fancy",
