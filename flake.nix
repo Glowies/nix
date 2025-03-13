@@ -48,6 +48,7 @@
             nodejs_23
             cargo
             dotnetCorePackages.sdk_9_0_1xx
+            _1password-cli
           ];
 
           fonts.packages = [
