@@ -37,6 +37,7 @@
             obsidian
             git
             neovim
+            wezterm
             nixfmt-rfc-style
             fzf
             jankyborders
