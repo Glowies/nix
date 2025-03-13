@@ -1,12 +1,10 @@
 { config, pkgs, ... }:
 
 let
-  nvimsettings = import ./nvim.nix;
   gitsettings = import ./git.nix;
   tmuxsettings = import ./tmux.nix;
   zshsettings = import ./zsh.nix;
   vscodesettings = import ./vscode.nix;
-  weztermsettings = import ./wezterm.nix;
 in
 {
   # Home Manager needs a bit of information about you and the
@@ -36,6 +34,7 @@ in
   # dotfile symlinks
   home.file = {
     ".vimrc".source = ./dotfiles/.vimrc;
+    ".wezterm.lua".source = ./dotfiles/.wezterm.lua;
     ".config/nvim/" = {
       source = ./dotfiles/nvim;
       recursive = true;
@@ -51,5 +50,4 @@ in
   programs.tmux = tmuxsettings pkgs;
   programs.zsh = zshsettings pkgs;
   programs.vscode = vscodesettings pkgs;
-  programs.wezterm = weztermsettings pkgs;
 }
