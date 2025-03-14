@@ -50,6 +50,7 @@
             dotnetCorePackages.sdk_9_0_1xx
             _1password-cli
             rustup
+            fd
           ];
 
           fonts.packages = [
