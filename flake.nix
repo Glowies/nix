@@ -49,6 +49,7 @@
             cargo
             dotnetCorePackages.sdk_9_0_1xx
             _1password-cli
+            rustup
           ];
 
           fonts.packages = [
