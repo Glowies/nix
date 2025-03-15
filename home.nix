@@ -2,7 +2,6 @@
 
 let
   gitsettings = import ./git.nix;
-  tmuxsettings = import ./tmux.nix;
   zshsettings = import ./zsh.nix;
   vscodesettings = import ./vscode.nix;
 in
@@ -43,11 +42,14 @@ in
       source = ./dotfiles/yazi;
       recursive = true;
     };
+    ".config/tmux/" = {
+      source = ./dotfiles/tmux;
+      recursive = true;
+    };
   };
 
   # Program Configs
   programs.git = gitsettings pkgs;
-  programs.tmux = tmuxsettings pkgs;
   programs.zsh = zshsettings pkgs;
   programs.vscode = vscodesettings pkgs;
 }
