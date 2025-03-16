@@ -20,3 +20,7 @@ set list
 set listchars=tab:→\ ,nbsp:␣,trail:•,precedes:«,extends:»
 
 set conceallevel=2
+
+" Remap control-c to espace to avoid triggering 
+" Keyboard Interrupt on some vim plugincs
+inoremap <C-c> <Esc>`^
