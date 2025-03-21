@@ -46,12 +46,9 @@
             ripgrep
             lazygit
             pngpaste
-            nodejs_23
-            cargo
-            dotnetCorePackages.sdk_9_0_1xx
             _1password-cli
-            rustup
             fd
+            vscode
           ];
 
           fonts.packages = [
