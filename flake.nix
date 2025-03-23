@@ -49,10 +49,11 @@
             _1password-cli
             fd
             vscode
+            gimp
           ];
 
-          fonts.packages = [
-            pkgs.nerd-fonts.fira-code
+          fonts.packages = with pkgs; [
+            nerd-fonts.fira-code
           ];
 
           # Necessary for using flakes on this system.
