@@ -50,6 +50,7 @@
             fd
             vscode
             gimp
+            raycast
           ];
 
           fonts.packages = with pkgs; [
