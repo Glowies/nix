@@ -53,8 +53,8 @@ pkgs: {
   #                 Monitor pattern is the same as for 'workspace-to-monitor-force-assignment'.
   #                 See: https://nikitabobko.github.io/AeroSpace/guide#assign-workspaces-to-monitors
   gaps = {
-    inner.horizontal = 16;
-    inner.vertical = 16;
+    inner.horizontal = 12;
+    inner.vertical = 12;
     outer.left = 8;
     outer.bottom = 8;
     outer.top = 8;
@@ -252,8 +252,8 @@ pkgs: {
     alt-shift-semicolon = "mode service";
 
     # Disable Annoying macOS "Hide application" feature
-    cmd-h = [];
-    cmd-alt-h = [];
+    cmd-h = [ ];
+    cmd-alt-h = [ ];
   };
 
   # 'service' binding mode declaration.
