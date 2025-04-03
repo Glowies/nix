@@ -50,4 +50,8 @@ in
   # Program Configs
   programs.git = gitsettings pkgs;
   programs.zsh = zshsettings pkgs;
+  programs.direnv = {
+    enable = true;
+    enableZshIntegration = true;
+  };
 }
