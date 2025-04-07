@@ -52,7 +52,6 @@
             gimp
             raycast
             openexr_3
-            tev
           ];
 
           fonts.packages = with pkgs; [
