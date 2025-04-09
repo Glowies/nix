@@ -52,6 +52,8 @@
             gimp
             raycast
             openexr_3
+            opencolorio
+            nodejs-slim
           ];
 
           fonts.packages = with pkgs; [
