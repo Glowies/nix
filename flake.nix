@@ -51,13 +51,20 @@
             vscode
             gimp
             raycast
-            openexr_3
-            opencolorio
             nodejs-slim
           ];
 
           fonts.packages = with pkgs; [
             nerd-fonts.fira-code
+          ];
+
+          # install some packages that are out of date in nixpkgs with homebrew
+          # homebrew needs to be installed on its own, separate from nix!
+          homebrew.enable = true;
+          homebrew.brews = [
+            "openexr"
+            "opencolorio"
+            "openimageio"
           ];
 
           # Necessary for using flakes on this system.
@@ -88,15 +95,6 @@
           nix.extraOptions = ''
             extra-platforms = x86_64-darwin aarch64-darwin
           '';
-
-          # Enable Touch ID for sudo
-          security.pam.enableSudoTouchIdAuth = true;
-          # security.pam.services.sudo_local = {
-          #   enable = true;
-          #   reattach = true;
-          #   touchIdAuth = true;
-          #   watchIdAuth = true;
-          # };
 
           # Set System Defaults
           system.defaults = {
