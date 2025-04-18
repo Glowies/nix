@@ -3,6 +3,7 @@ local config = wezterm.config_builder()
 
 config.default_prog = { "zsh", "--login", "-c", "tmux attach -t dev || tmux new -s dev" }
 config.window_decorations = "RESIZE"
+config.window_close_confirmation = "NeverPrompt"
 config.color_scheme = "Catppuccin Mocha"
 
 config.font = wezterm.font("FiraCode Nerd Font Mono")
