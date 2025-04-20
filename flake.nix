@@ -52,6 +52,7 @@
             gimp
             raycast
             nodejs-slim
+            vlc
           ];
 
           fonts.packages = with pkgs; [
