@@ -53,20 +53,22 @@
             raycast
             nodejs-slim
             vlc-bin
+            podman
+            nushell
+            starship
           ];
 
           fonts.packages = with pkgs; [
             nerd-fonts.fira-code
           ];
 
-          # install some packages that are out of date in nixpkgs with homebrew
-          # homebrew needs to be installed on its own, separate from nix!
-          homebrew.enable = true;
-          homebrew.brews = [
-            "openexr"
-            "opencolorio"
-            "openimageio"
-          ];
+          # # install some packages that are out of date in nixpkgs with homebrew
+          # # homebrew needs to be installed on its own, separate from nix!
+          # homebrew.enable = true;
+          # homebrew.brews = [
+          #   "opencolorio"
+          #   "openimageio"
+          # ];
 
           # Necessary for using flakes on this system.
           nix.settings.experimental-features = "nix-command flakes";

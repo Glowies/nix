@@ -45,6 +45,12 @@ in
       source = ./dotfiles/tmux;
       recursive = true;
     };
+    ".config/starship.toml" = {
+      source = ./dotfiles/starship.toml;
+    };
+    "Library/Application Support/nushell/config.nu" = {
+      source = ./dotfiles/config.nu;
+    };
   };
 
   # Program Configs
