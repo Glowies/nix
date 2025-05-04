@@ -56,6 +56,7 @@
             podman
             nushell
             starship
+            python313
           ];
 
           fonts.packages = with pkgs; [
