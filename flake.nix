@@ -31,6 +31,14 @@
       configuration =
         { pkgs, ... }:
         {
+          # Environment variables
+          environment.variables = {
+            XDG_CACHE_HOME = "$HOME/.cache";
+            XDG_CONFIG_HOME = "$HOME/.config";
+            XDG_DATA_HOME = "$HOME/.local/share";
+            XDG_STATE_HOME = "$HOME/.local/state";
+          };
+
           # List packages installed in system profile. To search by name, run:
           # $ nix-env -qaP | grep wget
           environment.systemPackages = with pkgs; [
@@ -56,7 +64,7 @@
             podman
             nushell
             starship
-            python313
+            uv
           ];
 
           fonts.packages = with pkgs; [

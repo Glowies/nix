@@ -48,7 +48,7 @@ in
     ".config/starship.toml" = {
       source = ./dotfiles/starship.toml;
     };
-    "Library/Application Support/nushell/config.nu" = {
+    ".config/nushell/config.nu" = {
       source = ./dotfiles/config.nu;
     };
   };
