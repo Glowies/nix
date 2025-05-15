@@ -132,6 +132,9 @@
             WindowManager.EnableStandardClickToShowDesktop = false;
           };
 
+          # Allow the machine to awake on LAN requests
+          networking.wakeOnLan.enable = true;
+
           # set users to avoid error with home-manager
           users = {
             users.${username} = {
