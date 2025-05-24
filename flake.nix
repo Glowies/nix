@@ -65,6 +65,9 @@
             nushell
             starship
             uv
+            dust
+            presenterm
+            zoxide
           ];
 
           fonts.packages = with pkgs; [

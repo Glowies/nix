@@ -48,8 +48,9 @@ in
     ".config/starship.toml" = {
       source = ./dotfiles/starship.toml;
     };
-    ".config/nushell/config.nu" = {
-      source = ./dotfiles/config.nu;
+    ".config/nushell/" = {
+      source = ./dotfiles/nushell;
+      recursive = true;
     };
   };
 
