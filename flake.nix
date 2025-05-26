@@ -66,6 +66,7 @@
             dust
             presenterm
             zoxide
+            chezmoi
           ];
 
           fonts.packages = with pkgs; [
