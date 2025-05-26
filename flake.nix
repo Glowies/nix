@@ -9,7 +9,6 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     nix-darwin.url = "github:LnL7/nix-darwin/master";
     nix-darwin.inputs.nixpkgs.follows = "nixpkgs";
-    nix-vscode-extensions.url = "github:nix-community/nix-vscode-extensions";
     mac-app-util.url = "github:hraban/mac-app-util";
     home-manager = {
       url = "github:nix-community/home-manager";
@@ -23,7 +22,6 @@
       nix-darwin,
       nixpkgs,
       home-manager,
-      nix-vscode-extensions,
       mac-app-util,
     }:
     let
@@ -97,11 +95,6 @@
 
           # Allow unfree packages
           nixpkgs.config.allowUnfree = true;
-
-          # Add overlays to nixpkgs
-          nixpkgs.overlays = [
-            nix-vscode-extensions.overlays.default
-          ];
 
           # Disable nix-darwins control over the nix installation so that Determinate Nix takes over
           nix.enable = false;
