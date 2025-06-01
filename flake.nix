@@ -67,6 +67,7 @@
             presenterm
             zoxide
             chezmoi
+            evil-helix
           ];
 
           fonts.packages = with pkgs; [
