@@ -23,6 +23,5 @@ pkgs: {
       fi
       rm -f -- "$tmp"
     }
-    eval "$(/opt/homebrew/bin/brew shellenv)"
   '';
 }
