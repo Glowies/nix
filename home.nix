@@ -26,32 +26,32 @@ in
   home.packages = with pkgs; [ ];
 
   home.sessionVariables = {
-    EDITOR = "nvim";
+    EDITOR = "hx";
   };
 
   # dotfile symlinks
   home.file = {
-    ".vimrc".source = ./dotfiles/.vimrc;
-    ".wezterm.lua".source = ./dotfiles/.wezterm.lua;
-    ".config/nvim/" = {
-      source = ./dotfiles/nvim;
-      recursive = true;
-    };
-    ".config/yazi/" = {
-      source = ./dotfiles/yazi;
-      recursive = true;
-    };
-    ".config/tmux/" = {
-      source = ./dotfiles/tmux;
-      recursive = true;
-    };
-    ".config/starship.toml" = {
-      source = ./dotfiles/starship.toml;
-    };
-    ".config/nushell/" = {
-      source = ./dotfiles/nushell;
-      recursive = true;
-    };
+    # ".vimrc".source = ./dotfiles/.vimrc;
+    # ".wezterm.lua".source = ./dotfiles/.wezterm.lua;
+    # ".config/nvim/" = {
+    #   source = ./dotfiles/nvim;
+    #   recursive = true;
+    # };
+    # ".config/yazi/" = {
+    #   source = ./dotfiles/yazi;
+    #   recursive = true;
+    # };
+    # ".config/tmux/" = {
+    #   source = ./dotfiles/tmux;
+    #   recursive = true;
+    # };
+    # ".config/starship.toml" = {
+    #   source = ./dotfiles/starship.toml;
+    # };
+    # ".config/nushell/" = {
+    #   source = ./dotfiles/nushell;
+    #   recursive = true;
+    # };
   };
 
   # Program Configs
