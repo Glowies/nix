@@ -145,6 +145,9 @@
           services.aerospace.enable = true;
           services.aerospace.settings = import ./aerospace.nix pkgs;
 
+          # enable tailscale
+          services.tailscale.enable = true;
+
           # set up jankyborders
           launchd.user.agents.jankyborders = {
             serviceConfig = {
