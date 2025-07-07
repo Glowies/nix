@@ -68,6 +68,7 @@
             zoxide
             chezmoi
             evil-helix
+            ncspot
           ];
 
           fonts.packages = with pkgs; [
