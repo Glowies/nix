@@ -44,6 +44,7 @@
             tmux
             git
             git-lfs
+            cmake
             neovim
             wezterm
             nixfmt-rfc-style
