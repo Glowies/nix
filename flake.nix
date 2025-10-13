@@ -71,6 +71,7 @@
             chezmoi
             helix
             ncspot
+            markdown-oxide
           ];
 
           fonts.packages = with pkgs; [
