@@ -70,7 +70,6 @@
             zoxide
             chezmoi
             helix
-            ncspot
             markdown-oxide
           ];
 
