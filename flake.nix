@@ -46,7 +46,7 @@
             git-lfs
             cmake
             neovim
-            wezterm
+            rio
             nixfmt-rfc-style
             fzf
             jankyborders
