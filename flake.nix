@@ -56,7 +56,6 @@
             pngpaste
             _1password-cli
             fd
-            vscode
             gimp
             raycast
             nodejs-slim
