@@ -49,7 +49,7 @@
             rio
             nixfmt-rfc-style
             fzf
-            jankyborders
+            # jankyborders
             yazi
             ripgrep
             lazygit
@@ -144,27 +144,27 @@
           };
 
           # import aerospace settings
-          services.aerospace.enable = true;
+          services.aerospace.enable = false;
           services.aerospace.settings = import ./aerospace.nix pkgs;
 
           # enable tailscale
           services.tailscale.enable = true;
 
           # set up jankyborders
-          launchd.user.agents.jankyborders = {
-            serviceConfig = {
-              ProgramArguments = [
-                "${pkgs.jankyborders}/bin/borders"
-                "style=round"
-                "active_color=0xffe1e3e4"
-                "inactive_color=0x00494d64"
-                "width=8.0"
-              ];
-              KeepAlive = true;
-              RunAtLoad = true;
-              ProcessType = "Interactive";
-            };
-          };
+          # launchd.user.agents.jankyborders = {
+          #   serviceConfig = {
+          #     ProgramArguments = [
+          #       "${pkgs.jankyborders}/bin/borders"
+          #       "style=round"
+          #       "active_color=0xffe1e3e4"
+          #       "inactive_color=0x00494d64"
+          #       "width=8.0"
+          #     ];
+          #     KeepAlive = true;
+          #     RunAtLoad = true;
+          #     ProcessType = "Interactive";
+          #   };
+          # };
         };
     in
     {
