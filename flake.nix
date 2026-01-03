@@ -50,6 +50,7 @@
             nixfmt-rfc-style
             fzf
             # jankyborders
+            rectangle
             yazi
             ripgrep
             lazygit
