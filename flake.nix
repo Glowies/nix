@@ -46,7 +46,6 @@
             git-lfs
             cmake
             neovim
-            rio
             nixfmt-rfc-style
             fzf
             # jankyborders
@@ -57,7 +56,6 @@
             pngpaste
             _1password-cli
             fd
-            gimp
             raycast
             nodejs-slim
             vlc-bin
@@ -88,6 +86,8 @@
           # Necessary for using flakes on this system.
           nix.settings.experimental-features = "nix-command flakes";
 
+          system.primaryUser = "glowies";
+          
           # Set Git commit hash for darwin-version.
           system.configurationRevision = self.rev or self.dirtyRev or null;
 
