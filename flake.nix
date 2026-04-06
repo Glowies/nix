@@ -41,6 +41,7 @@
           # $ nix-env -qaP | grep wget
           environment.systemPackages = with pkgs; [
             obsidian
+            librewolf
             tmux
             git
             git-lfs
@@ -50,7 +51,6 @@
             fzf
             # jankyborders
             rectangle
-            yazi
             ripgrep
             lazygit
             pngpaste
@@ -62,7 +62,6 @@
             podman
             nushell
             starship
-            uv
             dust
             presenterm
             zoxide
